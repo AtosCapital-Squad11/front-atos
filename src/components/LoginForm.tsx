@@ -49,14 +49,14 @@ const LoginForm: React.FC = () => {
           <div className="mx-auto">
             <AtosCapitalLogo width={240} height={90} />
           </div>
-          <CardTitle className="text-2xl font-bold">Bem-vindo</CardTitle>
+          <CardTitle className="text-2xl font-bold text-atos-red">Bem-vindo ao Dashboard</CardTitle>
           <CardDescription className="text-base">
             Faça login para acessar sua conta
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-5">
-            <div className="space-y-3">
+        <CardContent className="pt-2">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="space-y-4">
               <div className="relative">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
                   <User size={18} />
@@ -104,14 +104,6 @@ const LoginForm: React.FC = () => {
             </Button>
           </form>
         </CardContent>
-        <CardFooter className="flex justify-center pb-6">
-          <Button 
-            variant="link" 
-            className="text-atos-red hover:text-atos-red/80 font-medium"
-          >
-            Esqueci minha senha
-          </Button>
-        </CardFooter>
       </Card>
     </div>
   );
