@@ -17,8 +17,10 @@ const AtosCapitalLogo: React.FC<AtosCapitalLogoProps> = ({
       <svg 
         viewBox="0 0 200 80" 
         width={width} 
-        height={height} 
-        className="fill-atos-red"
+        height={height}
+        className="fill-current" 
+        role="img"
+        aria-label="ATOS CAPITAL"
       >
         <text 
           x="50%" 
@@ -27,7 +29,7 @@ const AtosCapitalLogo: React.FC<AtosCapitalLogoProps> = ({
           textAnchor="middle" 
           fontSize="28" 
           fontWeight="bold" 
-          fontFamily="Arial, sans-serif"
+          fontFamily="Inter, Arial, sans-serif"
         >
           ATOS CAPITAL
         </text>

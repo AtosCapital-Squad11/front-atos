@@ -1,8 +1,8 @@
 
-import LoginForm from "@/components/LoginForm";
+import LoginPage from "@/components/LoginPage";
 
 const Index = () => {
-  return <LoginForm />;
+  return <LoginPage />;
 };
 
 export default Index;
