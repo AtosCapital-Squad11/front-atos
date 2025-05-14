@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Eye, EyeOff, Lock, User } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -159,7 +159,7 @@ const LoginForm: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-center">
             <div className="flex items-center space-x-2">
               <Checkbox 
                 id="remember" 
@@ -173,12 +173,6 @@ const LoginForm: React.FC = () => {
                 Lembrar-me
               </Label>
             </div>
-            <button 
-              type="button" 
-              className="text-sm text-atos-red hover:text-atos-red/80 font-semibold"
-            >
-              Esqueci a senha
-            </button>
           </div>
 
           <Button 
@@ -190,12 +184,6 @@ const LoginForm: React.FC = () => {
           </Button>
         </form>
       </CardContent>
-      
-      <CardFooter className="flex justify-center pb-6">
-        <p className="text-sm text-gray-600">
-          Não tem conta? <a href="#" className="text-atos-red font-semibold hover:text-atos-red/80">Registre-se</a>
-        </p>
-      </CardFooter>
     </Card>
   );
 };
