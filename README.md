@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Front-end 
 
 ## Project info
 
