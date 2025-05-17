@@ -11,9 +11,6 @@ const LoginPage: React.FC = () => {
         <div className="flex flex-col items-center justify-center min-w-[260px] text-white">
           <AtosCapitalLogo width={280} height={100} className="text-white" />
           <h1 className="sr-only">ATOS CAPITAL - Login</h1>
-          <p className="mt-4 text-white/90 text-center max-w-xs">
-            Plataforma de gerenciamento para os seus investimentos
-          </p>
         </div>
 
         {/* Form Column */}
